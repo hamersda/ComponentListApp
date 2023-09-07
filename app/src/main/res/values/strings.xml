@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ComponentListApp</string>
+
+    <string name="komponens_name">Nama Komponen</string>
+    <string name="description">Deskripsi</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="about">About Developer</string>
+    <string name="profile_name">Hadim Aerasda</string>
+    <string name="profile_email">hadimaerasda@gmail.com</string>
+    <string name="profile_instagram">\@hamersda</string>
+    <string name="profile_twitter">\@kometmayor</string>
+    <string name="profile_github">hamersda</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="github">GitHub</string>
+
+    <string-array name="data_name">
+        <item>AND gate IC</item>
+        <item>Blue LED</item>
+        <item>Capacitor</item>
+        <item>Green LED</item>
+        <item>Inductor</item>
+        <item>MOSFET</item>
+        <item>OpAmp</item>
+        <item>Red LED</item>
+        <item>Resistor</item>
+        <item>Tranformator</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Komponen Integrated Circuit (IC) yang berisikan beberapa logic gate AND</item>
+        <item>Komponen LED 5 mm dengan warna cahaya yang dihasilkan adalah biru</item>
+        <item>Komponen yang berfungsi sebagai penyimpanan energi listrik dalam sebuah medan listrik ketika diaplikasikan suatu tegangan listrik</item>
+        <item>Komponen LED 5 mm dengan warna cahaya yang dihasilkan adalah hijau</item>
+        <item>Komponen yang menyimpan nergi dalam medan magnet ketika dialiri listrik</item>
+        <item>Komponen transistor berbasis field-effect yang bisa digunakan dalam berbagai rangkaian seperti pengatur logic, amplifier dan sebagainya</item>
+        <item>Komponen Integrated Circuit (IC) yang berfungsi untuk memperkuat suatu sinyal masukan</item>
+        <item>Komponen LED 5 mm dengan warna cahaya yang dihasilkan adalah merah</item>
+        <item>Komponen yang berfungsi memberikan hambatan pada suatu rangkaian elektrik</item>
+        <item>Komponen yang berfungsi sebagai voltage atau current regulator dalam suatu rangkaian elektrik</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/andgateic</item>
+        <item>@drawable/blueled</item>
+        <item>@drawable/capacitor</item>
+        <item>@drawable/greenled</item>
+        <item>@drawable/inductor</item>
+        <item>@drawable/mosfet</item>
+        <item>@drawable/opamp</item>
+        <item>@drawable/redled</item>
+        <item>@drawable/resistor</item>
+        <item>@drawable/trafo</item>
+    </integer-array>
+</resources>
