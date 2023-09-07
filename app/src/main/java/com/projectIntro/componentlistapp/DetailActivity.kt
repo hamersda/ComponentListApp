@@ -1,7 +1,9 @@
 package com.projectIntro.componentlistapp
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +27,13 @@ class DetailActivity : AppCompatActivity() {
             nameKomponen.text = dataKomponen.name
             descriptionItem.text = dataKomponen.description
             imageKomponen.setImageResource(dataKomponen.photo)
+        }
+        val btnShare = findViewById<Button>(R.id.action_share)
+        btnShare.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Konten Dibagikan")
+            startActivity(Intent.createChooser(shareIntent, "Bagikan melalui"))
         }
     }
 }
