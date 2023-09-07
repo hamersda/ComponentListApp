@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">ComponentListApp</string>
 
+
     <string name="komponens_name">Nama Komponen</string>
+    <string name="tvkomponens_name">Nama Komponen</string>
     <string name="description">Deskripsi</string>
+    <string name="tvdescription">Deskripsi</string>
     <string name="list">List</string>
     <string name="grid">Grid</string>
     <string name="about">About Developer</string>

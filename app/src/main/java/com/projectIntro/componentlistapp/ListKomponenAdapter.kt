@@ -1,12 +1,11 @@
 package com.projectIntro.componentlistapp
 
+import android.content.Intent
 import android.view.LayoutInflater
-import android.view.ScrollCaptureCallback
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class ListKomponenAdapter(private val listKomponen: ArrayList<Komponen>) : RecyclerView.Adapter<ListKomponenAdapter.ListViewHolder>() {
@@ -26,7 +25,12 @@ class ListKomponenAdapter(private val listKomponen: ArrayList<Komponen>) : Recyc
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDescription.text = description
-        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listKomponen[holder.adapterPosition])}
+
+        holder.itemView.setOnClickListener {
+            val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
+            intentDetail.putExtra("key_komponen", listKomponen[holder.adapterPosition])
+            holder.itemView.context.startActivity(intentDetail)
+        }
     }
 
     override fun getItemCount(): Int = listKomponen.size
