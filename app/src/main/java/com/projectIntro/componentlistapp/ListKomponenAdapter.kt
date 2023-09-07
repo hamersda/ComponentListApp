@@ -29,6 +29,7 @@ class ListKomponenAdapter(private val listKomponen: ArrayList<Komponen>) : Recyc
         holder.itemView.setOnClickListener {
             val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
             intentDetail.putExtra("key_komponen", listKomponen[holder.adapterPosition])
+            intentDetail.putExtra("key_komponen_info", KomponenInfo.Data.komponenInfoList[holder.adapterPosition])
             holder.itemView.context.startActivity(intentDetail)
         }
     }

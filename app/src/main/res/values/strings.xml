@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Komponen APP</string>
     <string name="Share">Share</string>
-
+    <string name="component_detail">Component Info</string>
+    <string name="voltage_detail">- Voltage:</string>
+    <string name="current_detail">- Current:</string>
+    <string name="type_detail">- Type:</string>
     <string name="komponens_name">Nama Komponen</string>
     <string name="tvkomponens_name">Nama Komponen</string>
     <string name="description">Deskripsi</string>
